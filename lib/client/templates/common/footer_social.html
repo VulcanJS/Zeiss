@@ -1,0 +1,10 @@
+<template name="footer_social">
+  <div class="footer-social">
+    {{#if hasTwitter}}
+      <a class="social-link" target="_blank" href="https://twitter.com/{{getSetting 'twitterAccount'}}">{{{icon "twitter"}}} {{_ "follow_on_twitter"}}</a>
+    {{/if}}
+    {{#if hasFacebook}}
+      <a class="social-link" target="_blank" href="https://www.facebook.com/{{getSetting 'facebookPage'}}">{{{icon "facebook"}}} {{_ "like_on_facebook"}}</a>
+    {{/if}}
+  </div>
+</template>
