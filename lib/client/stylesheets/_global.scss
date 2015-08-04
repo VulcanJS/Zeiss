@@ -12,6 +12,7 @@ body{
 body, input, button, textarea{
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: $regular;
+  color: #444;
 }
 
 .content-wrapper{
@@ -46,8 +47,4 @@ $nav-width: 250px;
   h3{
     font-size: 24px;
   }
-}
-
-.grid-module, .post, .comments{
-  color: #444;
 }

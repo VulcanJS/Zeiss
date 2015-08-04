@@ -8,8 +8,10 @@
     {{else}}
       <a class="nav-icon account-link sign-in" href="{{pathFor route='atSignIn'}}">{{{icon "user"}}}</a>
     {{/if}}
-      <a class="nav-icon" href="/submit">{{{icon "add"}}}</a>
-      <a class="nav-icon js-toggle-search" href="/search">{{{icon "search"}}}</a>
+    <a class="nav-icon" href="/submit">{{{icon "add"}}}</a>
+    <a class="nav-icon js-toggle-search" href="/search">{{{icon "search"}}}</a>
+    {{#if hasAboutPage}}
       <a class="nav-icon" href="/page/about">{{{icon "about"}}}</a>
+    {{/if}}
   </div>
 </template>

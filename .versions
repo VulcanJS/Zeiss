@@ -33,7 +33,7 @@ deps@1.0.7
 djedi:sanitize-html@1.6.1
 ejson@1.0.6
 email@1.0.6
-facebook@1.2.0
+facebook@1.2.1
 fastclick@1.0.3
 fortawesome:fontawesome@4.3.0
 fourseven:scss@2.1.1
@@ -117,7 +117,7 @@ telescope:messages@0.21.1
 telescope:posts@0.21.1
 telescope:settings@0.21.1
 telescope:users@0.21.1
-telescope:zeiss@0.1.0
+telescope:zeiss@0.1.2
 templating@1.1.1
 tracker@1.0.7
 twitter@1.1.4

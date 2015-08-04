@@ -232,18 +232,20 @@
 
 /*================ Marquee Effect =================*/
 
-.marquee-outer{
-  position: relative;
-}
-
-.marquee-inner{
-  position: absolute;
-  span{
+.primary-nav{
+  .marquee-outer{
     position: relative;
-    animation: marquee 5s linear infinite;
-    &:after{
-      content: attr(data-content);
-      margin: 0 10px;
+  }
+
+  .marquee-inner{
+    position: absolute;
+    span{
+      position: relative;
+      animation: marquee 5s linear infinite;
+      &:after{
+        content: attr(data-content);
+        margin: 0 10px;
+      }
     }
   }
 }
