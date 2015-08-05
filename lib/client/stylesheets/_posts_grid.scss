@@ -1,7 +1,7 @@
 /*================ Responsive Columns =================*/
 
 @mixin onecol(){
-  @media screen and (min-width: 600px) and (max-width: 800px) {
+  @media screen and (max-width: 800px) {
     @content;
   }
 }
@@ -27,8 +27,9 @@
     flex-wrap: wrap;
   }
   .post {
-    // margin-right: 10px;
-    // margin-bottom: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
     @include onecol {
       width: 100%;
       margin-right: 0px;
@@ -38,8 +39,8 @@
       }
     }
     @include twocol {
-      // width: calc((100% - 10px)/2);
-      width: calc((100%)/2);
+      width: calc((100% - 10px)/2);
+      // width: calc((100%)/2);
       &:nth-of-type(2n) {
         margin-right: 0;
       }
@@ -48,8 +49,8 @@
       }
     }
     @include threecol {
-      // width: calc((100% - 20px)/3);
-      width: calc((100%)/3);
+      width: calc((100% - 20px)/3);
+      // width: calc((100%)/3);
       &:nth-of-type(3n) {
         margin-right: 0;
       }
@@ -58,8 +59,8 @@
       }
     }
     @include fourcol {
-      // width: calc((100% - 30px)/4);
-      width: calc((100%)/4);
+      width: calc((100% - 30px)/4);
+      // width: calc((100%)/4);
       &:nth-of-type(4n) {
         margin-right: 0;
       }
@@ -96,11 +97,11 @@
 .more-button {
   display: block;
   width: 100%;
-  height: 120px;
+  height: 90px;
   background: black(0.3);
   text-align: center;
   color: white;
-  line-height: 120px;
+  line-height: 90px;
   font-size: 18px;
   // border-radius: 0px 0px 3px 3px;
   text-shadow: 0px 1px 1px 0px black(0.25);
@@ -135,6 +136,7 @@
     position: relative;
     padding-bottom: 56.25%;
     background: #111;
+    overflow: hidden;
     &:hover{
       .post-thumbnail-image{
         filter: blur(5px);
@@ -157,6 +159,8 @@
     right: 0px;
     width: 100%;
     height: 100%;
+    margin: 0;
+    float: none;
   }
 
   .post-thumbnail-link{
@@ -199,7 +203,7 @@
     position: absolute;
     bottom: 0px;
     width: 100%;
-
+    -webkit-font-smoothing: antialiased;
   }
 
   .post-summary{

@@ -17,7 +17,10 @@ body, input, button, textarea{
 
 .content-wrapper{
   max-width: none;
-  padding: 0;
+  padding: 10px;
+  @include small{
+    padding-top: 0px;
+  }
 }
 
 $nav-width: 250px;
