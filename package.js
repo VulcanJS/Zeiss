@@ -1,7 +1,7 @@
 Package.describe({
   name: "telescope:zeiss",
   summary: "Zeiss theme",
-  version: "0.1.3",
+  version: "0.1.4",
   git: "https://github.com/TelescopeJS/screenings"
 });
 
@@ -10,7 +10,8 @@ Package.onUse(function (api) {
   api.versionsFrom(['METEOR@1.0']);
 
   api.use([
-    'telescope:core@0.21.1'
+    'telescope:core@0.22.2',
+    'telescope:theme-base@0.22.2'
   ]);
 
   api.addFiles([
