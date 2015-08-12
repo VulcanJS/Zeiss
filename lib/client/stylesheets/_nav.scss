@@ -129,6 +129,9 @@
   .menu{
     .menu-item{
       padding: 0 0 10px 0;
+      &:last-child{
+        padding: 0;
+      }
     }
     .item-active{
       background: none;
@@ -176,7 +179,7 @@
     .menu-top-level{
       display: none;
     }
-    .menu-item:nth-child(1){
+    .item-never-active{
       display: none;
     }
   }
