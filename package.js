@@ -74,7 +74,6 @@ Package.onUse(function (api) {
     'lib/client/templates/nav/nav_footer.js',
     'lib/client/templates/nav/menu_item.html',
     'lib/client/templates/nav/user_menu_icon.html',
-    'lib/client/templates/nav/user_menu_icon.js',
 
     'lib/client/stylesheets/_colors.scss',
     'lib/client/stylesheets/_global.scss',
