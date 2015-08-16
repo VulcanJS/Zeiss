@@ -1,5 +1,5 @@
 <template name="footer_social">
-  <div class="footer-social">
+  <div class="footer-social {{moduleClass}}">
     {{#if hasTwitter}}
       <a class="social-link" target="_blank" href="https://twitter.com/{{getSetting 'twitterAccount'}}">{{{icon "twitter"}}} {{_ "follow_on_twitter"}}</a>
     {{/if}}
