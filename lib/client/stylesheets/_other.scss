@@ -12,10 +12,7 @@
     // border-radius: 3px;
     // border-top: 1px solid black(0.2);
     font-size: 18px;
-    margin: 0;
-    @include small{
-      margin-bottom: 10px;
-    }
+    margin-bottom: 10px;
   }
   .newsletter-email{
     border: none;
