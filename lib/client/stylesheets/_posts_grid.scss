@@ -285,6 +285,41 @@
   justify-content: flex-end;
 }
 
+.post-admin{
+  display: flex;
+  align-items: center;
+  .post-admin-actions, .post-admin-stats{
+    background: #eee;
+    border-radius: 3px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+    span, a{
+      display: inline-block;
+      padding: 1px 4px;
+      border-right: 1px solid white;
+      &:first-child{
+        border-radius: 3px 0 0 3px;
+      }
+      &:last-child{
+        border-radius: 0px 3px 3px 0px;
+        border: none;
+      }
+    }
+  }
+  .post-admin-stats{
+    background: none;
+    border: 1px solid $lightest-grey;
+    span{
+      border-right: 1px solid $lightest-grey;
+    }
+    .posts-list &{
+      display: none;
+    }
+  }
+}
+
+
 .post-avatars{
   display: flex;
   .avatar-link, .avatar{

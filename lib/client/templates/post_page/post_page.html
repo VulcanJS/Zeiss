@@ -40,8 +40,10 @@
           {{> post_categories}}
 
           <div class="post-info">
-            Submitted by <a class="post-author" href="{{getProfileUrl userId}}">{{getDisplayName userId}}</a> {{#if postedAt}}<span class="post-time">{{timeAgo postedAt}}</span>{{/if}}
-            {{> post_edit_icon}}
+            <div class="post-submitted">
+              Submitted by <a class="post-author" href="{{getProfileUrl userId}}">{{getDisplayName userId}}</a>
+              {{#if postedAt}}<span class="post-time">{{timeAgo postedAt}}</span>{{/if}}
+            </div>
             {{> post_admin}}
           </div>
 

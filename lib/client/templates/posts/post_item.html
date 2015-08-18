@@ -17,11 +17,12 @@
       <div class="post-footer-left">
         {{> post_vote}}
         {{> post_discuss}}
-        <div class="post-duration">
-          {{{icon "duration"}}}
-          <span class="action-count">{{duration}}</span>
-        </div>
-        {{> post_edit_icon}}
+        {{#if duration}}
+          <div class="post-duration">
+            {{{icon "duration"}}}
+            <span class="action-count">{{duration}}</span>
+          </div>
+        {{/if}}
         {{> post_admin}}
       </div>
       <div class="post-footer-right">
