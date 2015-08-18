@@ -309,11 +309,12 @@
   }
   .post-admin-stats{
     background: none;
-    border: 1px solid $lightest-grey;
+    border: 1px solid #eee;
     span{
-      border-right: 1px solid $lightest-grey;
+      border-right: 1px solid #eee;
     }
-    .posts-list &{
+    .posts &{
+      // do not display in posts list or grid view
       display: none;
     }
   }

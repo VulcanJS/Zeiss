@@ -27,6 +27,9 @@
   .post-info{
     display: flex;
     align-items: center;
+    .post-submitted{
+      margin-right: 5px;
+    }
   }
 
   .post-thumbnail{
