@@ -4,7 +4,7 @@
   </div>
   <div class="nav-footer">
     {{#if isLoggedIn}}
-      {{> menuComponent menuName="user" menuLabelTemplate="user_menu_icon" menuLabelData=user menuItems=menuItems menuMode="dropdown" menuClass="dropdown-top"}}
+      {{> menuComponent menuName="user" menuLabelTemplate="user_menu_icon" menuLabelData=user menuItems=menuItems menuClass="menu-dropdown"}}
     {{else}}
       <a class="nav-icon account-link sign-in" href="{{pathFor route='atSignIn'}}">{{{icon "user"}}}</a>
     {{/if}}

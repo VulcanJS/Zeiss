@@ -1,7 +1,7 @@
 Package.describe({
   name: "telescope:zeiss",
   summary: "Zeiss theme",
-  version: "0.1.11",
+  version: "0.1.12",
   git: "https://github.com/TelescopeJS/screenings"
 });
 
@@ -35,11 +35,8 @@ Package.onUse(function (api) {
 
   api.addFiles([
 
-    'lib/client/jquery.quickfit.js',
-
     'lib/client/templates/common/layout.html',
     'lib/client/templates/common/logo.html',
-    'lib/client/templates/common/logo.js',
     'lib/client/templates/common/newsletter_banner.html',
     'lib/client/templates/common/newsletter_banner.js',
     'lib/client/templates/common/page.html',
@@ -63,7 +60,9 @@ Package.onUse(function (api) {
     'lib/client/templates/nav/categories_menu.html',
     'lib/client/templates/nav/nav_footer.html',
     'lib/client/templates/nav/nav_footer.js',
-    'lib/client/templates/nav/menu_item.html',
+    'lib/client/templates/nav/posts_views_nav.html',
+    'lib/client/templates/nav/posts_views_nav.js',
+    'lib/client/templates/nav/views_menu_item.html',
     'lib/client/templates/nav/user_menu_icon.html',
 
     'lib/client/stylesheets/_colors.scss',

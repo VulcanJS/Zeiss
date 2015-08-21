@@ -33,6 +33,7 @@
     flex-grow: 1;
     margin-bottom: 20px;
     overflow-y: auto;
+    padding-right: 10px;
     &::-webkit-scrollbar {
         width:  5px;
     }
@@ -128,14 +129,14 @@
 
   .menu{
     .menu-item{
-      padding: 0 0 10px 0;
+      // padding: 0 0 10px 0;
       &:last-child{
         padding: 0;
       }
     }
     .item-active{
       background: none;
-      .menu-label:before{
+      >.menu-item-wrapper .menu-label:before{
         content: "❯ ";
       }
     }
@@ -157,9 +158,9 @@
       margin-left: 5px;
       color: white(0.8);
     }
-    &:hover .menu-description{
-      display: block;
-    }
+  }
+  .posts-views-nav .menu-item:hover .menu-description{
+    display: block;
   }
 
   /*================ Views =================*/
@@ -198,7 +199,7 @@
   }
 
   .user-menu{
-    .menu-menu{
+    .menu-wrapper{
       padding: 0 0 10px 0;
       bottom: 20px;
       left: 0px;
@@ -238,7 +239,7 @@
 
 /*================ Marquee Effect =================*/
 
-.primary-nav{
+.primary-nav{  
   .marquee-outer{
     position: relative;
   }
