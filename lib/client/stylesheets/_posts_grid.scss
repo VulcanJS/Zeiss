@@ -139,11 +139,11 @@
     overflow: hidden;
     &:hover{
       .post-thumbnail-image{
-        filter: blur(5px);
+        // filter: blur(5px);
         transform: scale(1.1);
       }
       .post-overlay{
-        opacity: 0.3;
+        opacity: 0.5;
       }
       .post-summary{
         max-height: 200px;
