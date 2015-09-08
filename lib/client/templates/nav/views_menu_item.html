@@ -1,10 +1,10 @@
 <template name="views_menu_item">
   <a class="menu-sub-level" href="{{itemRoute}}">
     <span class="menu-label">{{itemLabel}}</span>
-    {{#if description}}
+    {{#if item.description}}
       <span class="menu-description marquee-outer">
         <span class="marquee-inner">
-          <span data-content="{{_ description}}">{{_ description}}</span>
+          <span data-content="{{_ item.description}}">{{_ item.description}}</span>
         </span>
       </span>
     {{/if}}

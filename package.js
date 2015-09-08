@@ -1,7 +1,7 @@
 Package.describe({
   name: "telescope:zeiss",
   summary: "Zeiss theme",
-  version: "0.1.15",
+  version: "0.1.16",
   git: "https://github.com/TelescopeJS/screenings"
 });
 
