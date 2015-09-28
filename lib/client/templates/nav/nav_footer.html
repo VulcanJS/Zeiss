@@ -6,9 +6,9 @@
     {{#if isLoggedIn}}
       {{> menuComponent menuName="user" menuLabelTemplate="user_menu_icon" menuLabelData=user menuItems=menuItems menuClass="menu-dropdown"}}
     {{else}}
-      <a class="nav-icon account-link sign-in" href="{{pathFor route='atSignIn'}}">{{{icon "user"}}}</a>
+      <a class="nav-icon account-link sign-in" href="{{pathFor 'signIn'}}">{{{icon "user"}}}</a>
     {{/if}}
-    <a class="nav-icon" href="/submit">{{{icon "add"}}}</a>
+    <a class="nav-icon" href="{{pathFor 'postSubmit'}}">{{{icon "add"}}}</a>
     <a class="nav-icon js-toggle-search" href="/search">{{{icon "search"}}}</a>
     {{#if hasAboutPage}}
       <a class="nav-icon" href="/page/about">{{{icon "about"}}}</a>

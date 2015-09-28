@@ -1,7 +1,7 @@
 Package.describe({
   name: "telescope:zeiss",
   summary: "Zeiss theme",
-  version: "0.1.16",
+  version: "0.1.17",
   git: "https://github.com/TelescopeJS/screenings"
 });
 
@@ -23,7 +23,6 @@ Package.onUse(function (api) {
     'lib/modules.js',
     'lib/icons.js',
     'lib/views.js',
-    'lib/routes.js',
     'lib/menus.js',
     'lib/colors.js'
   ], ['client', 'server']);
@@ -46,6 +45,7 @@ Package.onUse(function (api) {
     'lib/client/templates/post_page/post_page.html',
     'lib/client/templates/post_page/post_page.js',
 
+    'lib/client/templates/posts/main_posts_list.html',
     'lib/client/templates/posts/post_item.html',
     'lib/client/templates/posts/post_item.js',
     'lib/client/templates/posts/after_post_item.html',

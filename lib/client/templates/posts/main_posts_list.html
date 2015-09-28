@@ -1,0 +1,7 @@
+<template name="zss_main_posts_list">
+  {{#if customTemplate}}
+    {{> Template.dynamic template=customTemplate data=arguments}}
+  {{else}}
+    {{> posts_list_controller arguments}}
+  {{/if}}
+</template>

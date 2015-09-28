@@ -1,10 +1,10 @@
-A video and photo theme for Telescope.
+A video and photo theme for [Telescope](http://telescopeapp.org).
 
-Install it with `meteor add telescope:zeiss`. 
+After [installing Telescope](http://docs.telescopeapp.org/docs/installing-telescope), you can install this theme with `meteor add telescope:zeiss`. 
 
 Make sure to uninstall any other theme (with the exception of the `base` theme), with (for example) `meteor remove telescope:theme-hubble`.
 
-Note that the theme currently requires running the `devel` branch of Telescope to work. 
+Questions? Feedback? Come say hello in the [Telescope Slack chatroom](http://slack.telescopeapp.org).
 
 ### Zeiss Tutorial
 
