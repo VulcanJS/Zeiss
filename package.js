@@ -1,7 +1,7 @@
 Package.describe({
   name: "telescope:zeiss",
   summary: "Zeiss theme",
-  version: "0.1.17",
+  version: "0.2.0",
   git: "https://github.com/TelescopeJS/screenings"
 });
 
@@ -10,8 +10,8 @@ Package.onUse(function (api) {
   api.versionsFrom(['METEOR@1.0']);
 
   api.use([
-    'telescope:core@0.22.2',
-    'telescope:theme-base@0.22.2'
+    'telescope:core@0.25.0',
+    'telescope:theme-base@0.25.0'
   ]);
 
   api.addFiles([
@@ -35,7 +35,7 @@ Package.onUse(function (api) {
   api.addFiles([
 
     'lib/client/templates/common/layout.html',
-    'lib/client/templates/common/logo.html',
+    // 'lib/client/templates/common/logo.html',
     'lib/client/templates/common/newsletter_banner.html',
     'lib/client/templates/common/newsletter_banner.js',
     'lib/client/templates/common/page.html',
@@ -45,7 +45,6 @@ Package.onUse(function (api) {
     'lib/client/templates/post_page/post_page.html',
     'lib/client/templates/post_page/post_page.js',
 
-    'lib/client/templates/posts/main_posts_list.html',
     'lib/client/templates/posts/post_item.html',
     'lib/client/templates/posts/post_item.js',
     'lib/client/templates/posts/after_post_item.html',
@@ -56,20 +55,16 @@ Package.onUse(function (api) {
     'lib/client/templates/posts/post_vote.html',
     'lib/client/templates/posts/post_vote.js',
 
-    'lib/client/templates/nav/submit_button.html',
-    'lib/client/templates/nav/categories_menu.html',
-    'lib/client/templates/nav/nav_footer.html',
-    'lib/client/templates/nav/nav_footer.js',
     'lib/client/templates/nav/views_menu.html',
     'lib/client/templates/nav/views_menu.js',
-    'lib/client/templates/nav/views_menu_item.html',
-    'lib/client/templates/nav/user_menu_icon.html',
+    'lib/client/templates/nav/submit_button.html',
 
-    'lib/client/stylesheets/_colors.scss',
+    'lib/client/stylesheets/_comments.scss',
     'lib/client/stylesheets/_global.scss',
     'lib/client/stylesheets/_posts_grid.scss',
     'lib/client/stylesheets/_mixins.scss',
     'lib/client/stylesheets/_nav.scss',
+    'lib/client/stylesheets/_custom_nav.scss',
     'lib/client/stylesheets/_other.scss',
     'lib/client/stylesheets/_post_page.scss',
     'lib/client/stylesheets/_accounts.scss',

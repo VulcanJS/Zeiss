@@ -1,5 +1,5 @@
 <template name="zss_submit_button">
-  {{#if canPost}}
-    <a id="submit" class="submit header-submodule {{moduleClass}}" href="/submit">{{_ "submit_video"}}</a>
-  {{/if}}
+  <div class="submit-button {{moduleClass}}">
+    <a id="submit" class="submit btn btn-primary" href="{{pathFor 'postSubmit'}}">{{_ "submit_video"}}</a>
+  </div>
 </template>

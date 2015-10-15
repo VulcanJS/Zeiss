@@ -8,7 +8,6 @@
         {{> header}}
         {{> modules zone="hero"}}
         <div class="content-wrapper">
-          {{> messages}}
           {{#if notAllowed}}
             {{> Template.dynamic template=notAllowed.template data=notAllowed.data}}
           {{else}}
