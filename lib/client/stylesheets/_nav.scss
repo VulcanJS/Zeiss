@@ -5,9 +5,15 @@
 //    b. Side nav
 
 .header{
-  position:relative;
   z-index: 100;
+  @include small{
+    box-shadow: 1px 0px 3px black(0.2);
+  }
+  @include medium-large{
+    position:relative;
+  }
 }
+
 .logo{
   line-height: 1;
   text-align: center;
@@ -154,9 +160,10 @@ $nav-width: 250px;
       justify-content: space-between;
     }
     .logo{
-      text-align: left;
-      &.logo-image{
-        text-align: center;
+      text-align: center;
+      .logo-image{
+        display: inline-block;
+        max-width: 100%;
         a{
           margin: 0 auto;
         }
@@ -225,7 +232,7 @@ $nav-width: 250px;
 }
 
 .header{
-  background: black(0.3) !important;
+  background: black(0.3);
 }
 
 
