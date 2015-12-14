@@ -128,7 +128,7 @@ telescope:posts@0.25.0
 telescope:settings@0.25.0
 telescope:theme-base@0.25.0
 telescope:users@0.25.0
-telescope:zeiss@0.2.1
+telescope:zeiss@0.2.2
 templating@1.1.5
 templating-tools@1.0.0
 tmeasday:publish-counts@0.7.2
